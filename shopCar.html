@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopCar-website2</title>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<!-- 让IE6支持透明 -->
+	<!--[if IE 6]>
+	<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+	<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="headerBar">
+		<div class="top">
+			<div class="commonWidth">
+				<div class="left-area">
+					<a href="#" class="top-collection">收藏慕课</a>
+				</div><!-- left-area结束 -->
+				<div class="right-area">
+					欢迎来到慕课网！
+					<a href="#">[登录]</a>
+					<a href="#">[免费注册]</a>
+				</div><!-- right-area结束 -->
+			</div><!-- commonWidth结束 -->
+		</div><!-- top结束 -->
+		<div class="logo">
+			<div class="commonWidth">
+				<div class="logo-pic fl">
+					<a href="#"><img src="images/logo.png" alt="慕课网"></a>
+				</div><!-- logoPic结束 -->
+				<div class="step fr">
+					<div class="step-pic"></div>
+				</div>
+			</div><!-- commonWidth结束 -->
+		</div><!-- logo结束 -->
+	</div><!-- headerBar结束 -->
+
+	<div class="shop-cart commonWidth">
+		<div class="shop-cart-item">
+			<h3>收货信息</h3>
+		</div>
+		<div class="shop-cart-cont">
+			<ul class="shop-cart-list">
+				<li class="clearfix">
+					<span class="shop-cart-sp"><em>*</em>选择地区：</span>
+					<div class="item-addr-select">
+						<h3>海淀五环内</h3>
+						<span></span>
+						<ul class="item-select-show">
+							<li><a href="#">Samsung</a></li>
+							<li><a href="#">Samsung</a></li>
+							<li><a href="#">Samsung</a></li>
+						</ul>
+					</div><!-- item-addr-select结束 -->
+				</li>
+				<li>
+					<span class="shop-cart-sp"><em>*</em>详细地址：</span>
+					<input class="input input-b" type="text" name="" value="" placeholder="最多输入26个汉字">
+				</li>
+				<li>
+					<span class="shop-cart-sp"><em>*</em>收 货 人：</span>
+					<input  class="input" type="text" name="" value="" placeholder="最多输入10个字">
+				</li>
+				<li>
+					<span class="shop-cart-sp"><em>*</em>手&nbsp;&nbsp;机：</span>
+					<input  class="input" type="text" name="" value="如12322223333" placeholder="">&nbsp;或固定电话：<input class="input" type="text" name="" value="" placeholder="区号" style="width:30px"> - <input class="input" type="text" name="" value="" placeholder="电话号码"> - <input class="input" type="text" name="" value="" placeholder="分机号（可选）">
+				</li>
+				<li>
+					<input type="button" name="" id="confirm" value="确认收货地址">
+				</li>
+			</ul>
+		</div><!-- shop-cart-cont结束 -->
+	</div><!-- shop-cart1结束 -->
+	<div class="shop-cart commonWidth">
+		<div class="shop-cart-item">
+			<h3>支付方式</h3>
+		</div>
+		<div class="shop-cart-cont">
+			<ul class="shop-cart-list">
+				<li>
+					<input type="radio" name="1" value="" placeholder="" id="1">
+					<label for="1">微信支付</label>微信扫一扫就能支付
+				</li>
+				<li>
+					<input type="radio" name="1" value="" placeholder="" id="2">
+					<label for="2">货到付款</label>送货上门后再付款，使用现金或刷卡
+				</li>
+			</ul>
+		</div><!-- shop-cart-cont结束 -->
+	</div><!-- shop-cart结束2 -->
+	<div class="shop-cart commonWidth">
+		<div class="shop-cart-item">
+			<h3>发票信息</h3>
+		</div>
+		<div class="shop-cart-cont">
+			<ul class="shop-cart-list">
+				<li>
+					<input type="checkbox" name="2" value="" placeholder="" id="3">
+					<label for="3">需要发票</label>
+				</li>
+				<li>
+					<span class="shop-cart-sp"><em>*</em>发票类型：</span>
+					<select>
+						<option value="商业零售发票">商业零售发票</option>
+						<option value="个人零售发票">个人零售发票</option>
+						<option value="学习零售发票">学习零售发票</option>
+					</select>
+				</li>
+				<li>
+					<span class="shop-cart-sp"><em>*</em>发票抬头：</span>
+					<select>
+						<option value="个人">个人</option>
+						<option value="公家">公家</option>
+						<option value="大家">大家</option>
+					</select>
+					<input class="input" type="text" name="" value="" placeholder="阿斯顿">
+				</li>
+				<li>
+					<input type="button" name="" value="保存" class="btn">
+					<input type="button" name="" value="取消" class="btn">
+				</li>
+			</ul>
+		</div><!-- shop-cart-cont结束 -->
+	</div><!-- shop-cart结束3 -->
+	<div class="shop-cart commonWidth">
+		<div class="shop-cart-item">
+			<h3>送货清单<a href="#" class="back-shop-cart">返回购物车修改</a></h3>
+		</div>
+		<div class="shop-cart-cont c-padding">
+			<div class="shop-cart-inner">
+				<div class="shop-cart-head clearfix">
+					<div class="shop-cart-head-item">商品名称</div>
+					<div class="shop-cart-head-item">单价</div>
+					<div class="shop-cart-head-item">返现</div>
+					<div class="shop-cart-head-item">数量</div>
+					<div class="shop-cart-head-item">小计</div>
+				</div><!-- shop-cart-head结束 -->
+				<div class="shop-cart-inner-cont clearfix">
+					<div class="shop-cart-head-item">	
+						<div class="shop-cart-info clearfix">
+							<img src="images/item/bingxiang.png" alt="">
+							<div class="shop-cart-info-txt">
+								<p class="cart-link"><a href="#">大冰箱！大冰箱！温州超级大冰箱厂倒闭了！</a></p>
+								<p class="cart-info">王八蛋老板黄鹤带着小老婆跑了！</p>
+							</div>
+						</div>
+					</div>
+					<div class="shop-cart-head-item">单价</div>
+					<div class="shop-cart-head-item">返现</div>
+					<div class="shop-cart-head-item">数量</div>
+					<div class="shop-cart-head-item">小计</div>
+				</div><!-- shop-cart-inner-cont结束1 -->
+				<div class="cart-message">
+					若您对包裹有特殊要求，请在此留言！
+				</div>
+				<div class="cart-prompt">
+					<span class="cart-prompt-txt"><i></i>抱歉，以下商品暂时不能购买，已自动帮您在本次结算中剔除该商品。</span>
+				</div>
+				<div class="shop-cart-inner-cont clearfix">
+						<div class="shop-cart-info clearfix">
+							<img src="images/item/bingxiang.png" alt="">
+							<div class="shop-cart-info-txt">
+								<p class="cart-link"><a href="#">大冰箱！大冰箱！温州超级大冰箱厂倒闭了！</a></p>
+								<p class="cart-info">王八蛋老板黄鹤带着小老婆跑了！</p>
+							</div>
+						</div>
+				</div><!-- shop-cart-inner-cont结束2 -->
+			</div><!-- shop-cart-inner结束 -->
+		</div><!-- shop-cart-cont结束 -->
+	</div><!-- shop-cart结束4 -->
+	<div class="shop-cart commonWidth">
+		<div class="shop-cart-item">
+			<h3>订单结算</h3>
+		</div>
+		<div class="shop-cart-cont clearfix">
+			<div class="cart-count fr">
+				<div class="cart-rmb">
+					<i>总计：</i><span>￥1549.00</span>
+				</div>
+				<div class="cart-btn">
+					<input type="button" name="" value="提交订单">
+				</div>
+			</div>
+		</div><!-- shop-cart-cont结束 -->
+	</div><!-- shop-cart结束5 -->
+	<div style="height:25px"></div>
+	<!-- 这个div是为了撑开高度的，没有什么语意，不好！ -->
+	<div class="footer">
+		<P>
+			<a href="#">慕课简介</a><i>|</i>
+			<a href="#">慕课公告</a><i>|</i>
+			<a href="#">招纳贤士</a><i>|</i>
+			<a href="#">联系我们</a><i>|</i>客服热线：400-675-1234
+		</P>
+		<p>Copyright © 2006 - 2014 慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373&nbsp;&nbsp;&nbsp;某市某公安局备案编号：12390932</p>
+		<p class="footer-logo">
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+			<a href="#"><img src="images/footer-logo.png" alt="logo" /></a>
+		</p>
+	</div><!-- footer结束 -->
+</body>
+</html>
